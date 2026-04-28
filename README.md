@@ -1,23 +1,54 @@
+# Mini Bank (Smart Contracts)
 
-# Mini Bank (Smart Contract)
+Simple Ethereum smart contracts project built in Solidity.
 
-Simple Ethereum smart contract that allows users to deposit and withdraw ETH.
+##  Contracts
 
-# Functions
+### MiniBank.sol
+Basic contract with:
+- deposit ETH
+- withdraw ETH (only owner)
 
-- deposit() — send ETH to the contract  
-- withdraw(uint amount) — withdraw ETH (only owner)
-  
-# Security
+### MyWalletFinal.sol
+Improved version with:
+- deposit ETH
+- withdraw ETH
+- mapping balances per user
+- events (Deposited, Withdrawn)
 
-- Only owner can withdraw  
+---
+
+##  Functions
+
+- deposit() — send ETH to contract  
+- withdraw(uint amount) — withdraw your ETH  
+
+---
+
+##  Security
+
 - Cannot withdraw more than balance  
+- Uses require() checks  
 
-# Tech
+---
 
-- Solidity ^0.8.0  
-- Remix IDE  
+##  Events
 
-# Author
+- Deposited(address user, uint amount)  
+- Withdrawn(address user, uint amount)  
 
-vozbor-dev (beginner Solidity developer)
+---
+
+##  What I learned
+
+- mappings
+- msg.sender / msg.value
+- payable
+- require
+- events
+- basic smart contract structure
+
+##  Author
+
+vodozbor-dev  
+
